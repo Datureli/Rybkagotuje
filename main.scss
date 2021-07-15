@@ -66,6 +66,11 @@ body {
 .carousel-inner img {
   height: 700px !important;
 }
+.carousel-item {
+  img {
+    width: 100%
+  }
+}
 .carousel-caption {
   text-align: center;
   top: 50%;
