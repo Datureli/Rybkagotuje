@@ -166,49 +166,8 @@ header {
   transform: scale(0.3);
 }
 
-.x9 {
-  animation: animateBubble 19s linear infinite,
-    sideWays 4s ease infinite alternate;
-  left: 90%;
-  top: 10%;
-  transform: scale(0.6);
-}
 
-.x10 {
-  animation: animateBubble 26s linear infinite,
-    sideWays 2s ease-in infinite alternate;
-  left: 80%;
-  top: 40%;
-  transform: scale(0.3);
-}
-.x14 {
-  animation: animateBubble 26s linear infinite,
-    sideWays 2s ease-in infinite alternate;
-  left: 80%;
-  top: 40%;
-  transform: scale(0.3);
-}
-.x11 {
-  animation: animateBubble 31s linear infinite,
-    sideWays 2s ease-in infinite alternate;
-  left: 80%;
-  top: 40%;
-  transform: scale(0.3);
-}
-.x12 {
-  animation: animateBubble 21s linear infinite,
-    sideWays 2s ease-in infinite alternate;
-  left: 80%;
-  top: 40%;
-  transform: scale(0.5);
-}
-.x13 {
-  animation: animateBubble 16s linear infinite,
-    sideWays 2s ease-in infinite alternate;
-  left: 80%;
-  top: 40%;
-  transform: scale(0.3);
-}
+
 
 .bubble {
   border-radius: 50%;
