@@ -14,11 +14,6 @@ body {
           justify-content: center;
 }
 
-.subpages {
-  height: 100px;
-  padding: 50px auto;
-}
-
 .hideme {
   -webkit-animation: none;
           animation: none;
@@ -124,10 +119,13 @@ body {
 }
 
 .carousel-inner img {
-  height: 700px !important;
+  max-width: 100% !important;
+  height: auto;
+  display: block;
 }
 
 .carousel-item img {
+  height: auto;
   width: 100%;
 }
 
@@ -136,6 +134,10 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 50px;
 }
 
 header {
@@ -250,8 +252,8 @@ header {
 
 .bubble {
   border-radius: 50%;
-  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
-          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #f0d8d8;
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px #f0d8d8;
   height: 100px;
   bottom: 100%;
   position: absolute;
@@ -475,6 +477,10 @@ header {
 .jumbotron {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#209cff), to(#68e0cf)) !important;
   background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%) !important;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .thumbnail {
@@ -743,23 +749,12 @@ h2 {
 }
 
 #subemail {
-  height: 40vh;
-  width: 50vh;
+  height: auto;
+  width: 100%;
   border-radius: 5%;
   background-color: #18188a;
   outline: none;
   margin-top: 50px;
-}
-
-.card-header {
-  font-size: 23px;
-  height: 10vh;
-  cursor: default;
-}
-
-.card-body {
-  padding-bottom: 5px;
-  cursor: default;
 }
 
 #laceholder {
@@ -772,119 +767,20 @@ h2 {
 #footcontainer {
   width: 100%;
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: url(./img/grzanki.jpg) no-repeat fixed center;
   background-size: 100%;
   -webkit-filter: contrast(170%);
           filter: contrast(170%);
-  text-align: center;
-  padding: 7vh;
+  padding: 10vh;
 }
 
 #footcontainer2 {
   width: 400px;
   height: 300px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: transparent;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   font-size: 20px;
-  color: white;
-}
-
-#footcontainer2.clicked {
-  width: 400px;
-  height: 300px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: green;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
-.popup {
-  background: #554949;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
-.popup-content {
-  height: 100%;
-  width: 800px;
-  background: darkmagenta;
-  border-radius: 5px;
-  position: relative;
-}
-
-.popup-content h1 {
-  background: black;
-  width: 800px;
-  height: 80px;
-  padding: 20px;
-}
-
-.popup-content input {
-  width: 200px;
-  display: -ms-grid;
-  display: grid;
-  outline: none;
-  border: none;
-  background: none;
-  border-bottom: 1px solid black;
-  font-size: 37px;
-  margin-top: 5px;
-  margin-left: 20px;
-}
-
-.popup-content textarea {
-  float: right;
-  margin-right: 20px;
-  margin-top: 10px;
-  height: 180px;
-  background: none;
-  outline: none;
-  border-radius: 10px;
-  border: 2px solid black;
-}
-
-.popup-content .btn {
-  background: red;
-  border: none;
-  border-radius: 50%;
-  float: right;
-  height: 80px;
-  width: 80px;
-  font-size: 25px;
-  outline: none;
-  padding: 20px;
-  margin: 60px 20px 40px auto;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.popup-content .btn:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ff0844), to(#ffb199));
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-  border: none;
 }
 
 .sclup {
@@ -974,6 +870,19 @@ h2 {
     display: block;
     padding-left: 7vh;
   }
+  .carousel-caption {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+  }
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .lead {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .logoname {
     padding-left: 2px;
     margin-top: 0;
@@ -1005,8 +914,8 @@ h2 {
     display: none;
   }
   #subemail {
-    margin: auto;
-    width: 64vh;
+    margin: 30px auto;
+    width: 100%;
   }
   #textaboutme {
     text-align: center;
