@@ -455,9 +455,11 @@ h2 {
   animation-fill-mode: forwards;
 }
 #rybka {
+  padding: 5px;
+  width: 100%;
   height: 400px;
-  background-color: rgb(24, 17, 17);
-  border-bottom: none;
+  background-color: rgb(23, 107, 122);
+  justify-content: center;
   text-align: center;
 }
 .posts {
@@ -469,6 +471,7 @@ h2 {
   border: 8px solid transparent;
   background: linear-gradient(90deg, #efa51a, #ce00);
   width: 300px;
+  margin-left: 50px;
   margin-top: 25px;
 }
 .scaleimg {
@@ -512,14 +515,7 @@ h2 {
   outline: none;
   border: none;
 }
-#footcontainer {
-  width: 100%;
-  height: 100%;
-  background: url(./img/grzanki.jpg) no-repeat fixed center;
-  background-size: 100%;
-  filter: contrast(170%);
-  padding: 10vh;
-}
+
 
 #footcontainer2 {
   width: 400px;
@@ -527,10 +523,10 @@ h2 {
   background: transparent;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  margin: 50px auto;
 }
-
-
-
 
 .sclup {
   animation: scaleup 0.5s forwards;
@@ -540,10 +536,11 @@ h2 {
     width: 400px;
   }
   to {
-    width: 800px;
+    width: 600px;
     font-size: 40px;
   }
 }
+
 .fiveicons {
   width: 80px;
   height: 320px;
@@ -552,6 +549,7 @@ h2 {
   text-align: center;
   margin-top: 65px;
   font-size: 35px;
+  
 
   p {
     margin-top: 40px;
@@ -575,7 +573,7 @@ h2 {
 }
 
 #textaboutme {
-  margin-top: 70px;
+  margin-top: 90px;
   font-size: 20px;
 }
 
@@ -594,10 +592,49 @@ h2 {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: #0030b3;
 }
+@media(min-width: 700px) and (max-width: 1000px) {
+  #subemail {
+    margin: 30px auto;
+    width: 400px;
+  }
+  #textaboutme {
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  #aboutme {
+    height: 100%;
+    display: block;
+    padding-left: 7vh;
+  }
+}
+@media(min-width: 700px) and (max-width: 1400px) {
+  
 
-@media all and (max-width: 1300px) {
+
+#meet {
+  height: 300px;
+  width: auto;
+  min-width: 300px;
+  margin: 30px auto;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  
+}
+#textaboutme {
+
+  margin-right: 50px;
+}
+#aboutme {
+  height: 100%;
+  display: block;
+  padding-left: 7vh;
+}
+}
+@media all and (max-width: 700px) {
   #aboutme {
     height: 100%;
     display: block;
@@ -660,18 +697,13 @@ h2 {
     padding: 0;
     position: relative;
   }
-  #footcontainer {
-    width: 100%;
-    height: 70vh;
-    background-size: 135vh;
-    filter: contrast(150%);
-  }
+
   #footcontainer2 {
     animation: none;
     width: 100%;
     font-size: 30px;
     margin: 30px auto;
-    color: rgb(65, 49, 49);
+
   }
   .fiveicons {
     width: 100%;
