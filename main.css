@@ -883,6 +883,25 @@ h2 {
 }
 
 @media (min-width: 700px) and (max-width: 1400px) {
+  .search-box {
+    margin: 3vh;
+  }
+  .search-box.active .icon {
+    right: 0;
+    color: crimson;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .search-box.active {
+    width: auto;
+    height: 14000px;
+    -webkit-animation: fade 10s forwards;
+            animation: fade 10s forwards;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 0;
+    left: 0%;
+  }
   #meet {
     height: 300px;
     width: auto;
